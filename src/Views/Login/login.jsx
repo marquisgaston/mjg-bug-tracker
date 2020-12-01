@@ -19,6 +19,7 @@ export default ()=> {
     }
 
     function submit(e){
+        console.log("submitted")
         dispatch(signIn(formInput));
         e.preventDefault();
     }

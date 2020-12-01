@@ -3,7 +3,7 @@ import {useSelector} from "react-redux";
 import './index.scss';
 import Login from './Views/Login/login';
 import Sidebar from './Views/pages/sidebar';
-import {BrowserRouter as Router} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import ViewBugPage from "./Views/pages/viewBugPage";
 
 function App() {
@@ -11,10 +11,12 @@ function App() {
   return (
     <Router>
       {!auth.loggedIn ? <Login/> :
-        <>
+        <div className="app-wrapper">
           <Sidebar/>
-          <ViewBugPage/>
-        </>
+            <Switch>
+              <Route path="/" exact component={ViewBugPage}/>
+            </Switch>
+        </div>
       }
     </Router>
   );

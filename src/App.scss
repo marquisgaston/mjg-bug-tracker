@@ -8,9 +8,10 @@ html {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  min-width: 100vw;
 }
 
-.page-wrapper {
+.app-wrapper {
   display: grid;
   grid-template-columns: max-content auto;
   width: 100vw;

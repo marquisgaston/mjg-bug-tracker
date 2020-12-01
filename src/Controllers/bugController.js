@@ -31,6 +31,4 @@ export function retreiveBugs(){
     let sorted = data.sort((a,b)=>{return a.priority - b.priority});
     return sorted;
 
-}
-
-console.log("retreive bugs", retreiveBugs());
+} 
