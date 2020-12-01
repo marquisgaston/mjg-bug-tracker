@@ -5,7 +5,7 @@ const slice = createSlice({
     name:"bug",
     initialState:[],
     reducers:{
-        getBugs:state => retreiveBugs(),
+        getBugs:state =>  retreiveBugs(),
             
         createBugs:(state, actions)=>{
 

@@ -17,7 +17,7 @@ export default (props)=> {
             <ViewSection title="Creator" info={bug.creator}/>
             <ViewSection title="Version" info={bug.version}/>
             <ViewSection title="Time Created" info={bug.time}/>
-            <button onClick={()=>{dispatchEvent(markComplete())}}>Mark Complete</button>
+            <button onClick={()=>{useDispatch(markComplete())}}>Mark Complete</button>
         </div>
     )
 }

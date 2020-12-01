@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {useDispatch} from "react-redux";
 import {signIn} from "../../Controllers/Redux/authSlice";
-// eslint-disable-next-line
+
 export default ()=> {
     const dispatch = useDispatch();
 
