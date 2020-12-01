@@ -1,0 +1,32 @@
+html {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.page-wrapper {
+  display: grid;
+  grid-template-columns: max-content auto;
+  width: 100vw;
+}
+
+.page-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  grid-column: 2;
+}
+
+@import "./Views/Login/login.scss";
+@import "./Views/pages/sidebar.scss";
+@import "./Views/Components/Bug Card/bugCard.scss";
+@import "./Views/Components/Bug View/bugView.scss";
+@import "./Views/Components/Bug View/bugViewSection.scss";
+

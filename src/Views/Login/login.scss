@@ -1,0 +1,59 @@
+.loginBG {
+    width: 100vw;
+    height: 105vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://source.unsplash.com/random");
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.629);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: absolute;
+
+}
+
+.login-panel {
+    background-color: rgba(0, 0, 0, 0.55);
+    width: 30vw;
+    border: 1px solid grey;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        width: 100%;
+    }
+
+    input {
+        width: 20em;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        margin: 10px;
+        padding-left: 10px;
+    }
+
+    button {
+        background-color: darkblue;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 20px;
+        border: 1px solid black;
+        height: 3em;
+        font: normal bold 18px "Open Sans", sans-serif;
+        text-align: center;
+        width: 6em;
+        margin-bottom: 10px;
+
+        &:hover {
+            transition: all 0.3s;
+            background-color: gray;
+
+        }
+
+    }
+
+}

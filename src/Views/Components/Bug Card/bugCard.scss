@@ -1,0 +1,20 @@
+.bug-card {
+    display: grid;
+    box-shadow: 2px 2px 2px  $prim-color;
+    text-align: center;
+    margin: 10px;
+    min-width: 275px;
+    min-height: 200px;
+    height: max-content;
+    width: max-content;
+
+    :hover {
+        transition: all 0.3s;
+        transform: scale(1.2);
+
+    }
+
+    div {
+        background-color: white;
+    }
+}
